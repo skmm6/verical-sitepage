@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Montserrat', system-ui, sans-serif;
+  }
+
+  .border-grad {
+    border-image: linear-gradient(to right ,#FF512F , #DD2476);
+    -moz-border-image: -moz-linear-gradient(to right ,#FF512F , #DD2476);
+    -webkit-border-image: -webkit-linear-gradient(to right ,#FF512F , #DD2476);
+    border-image-slice: 1;
+  }
+
+  .text-description {
+    font-size: 19px;
+    line-height: 23px;
+  }
+
+  .text-footer {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
