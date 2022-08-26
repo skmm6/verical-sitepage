@@ -22,13 +22,13 @@ module.exports = {
         '8': 'repeat(8, minmax(0, 1fr))',
 
         // Complex site-specific row configuration
-        'layout': '215px 1fr 165px',
+        'layout': '115px repeat(3, 1fr) 110px',
       },
       container: {
         center: true,
         padding: {
           DEFAULT: '1rem',
-          sm: '2rem',
+          sm: '1.5rem',
           lg: '4rem',
           xl: '5rem',
           '2xl': '6rem',

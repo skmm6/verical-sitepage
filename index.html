@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="icon" type="image/svg+xml" href="./img/Favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark">
     <title>Vertical</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,34 +12,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
   </head>
-  <body class="bg-bgc container grid grid-rows-layout h-screen text-white text-body">
-    <header class="max-w-screen-xl flex justify-between items-center">
-      <img src="./img/logo-full.png" alt="">
+  <body class="bg-bgc container grid grid-rows-layout h-screen text-white text-sm sm:text-body">
+    <header class="max-w-screen-xl flex justify-between items-center row-span-1">
+      <img 
+      class="w-40 sm:w-96"
+      src="./img/logo-full.png" alt="Logo" >
       <a href="mailto:info@vertical-media.ru" 
-      class="bg-clip-text text-transparent bg-gradient-to-r from-primary-link--1 to-primary-link--2 relative flex flex-col font-bold"
+      class="bg-clip-text text-transparent bg-gradient-to-r from-primary-link--1 to-primary-link--2 relative flex flex-col font-bold hidden md:block"
       >info@vertical-media.ru <span class="bg-gradient-to-r from-primary-link--1 to-primary-link--2 h-1px -translate-y-1 block"></span></a>
     </header>
-    <main class="max-w-screen-xl self-center py-24">
-      <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-primary-link--1 to-primary-link--2 uppercase text-6xl pb-3">Сайт в разработке...</h1>
-      <p class=" pb-20">Наш сайт находится на стадии разработки.</p>
+    <main class="max-w-screen-xl self-center row-start-3 row-end-4 flex flex-col sm:block">
+      <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-primary-link--1 to-primary-link--2 uppercase text-3xl sm:text-6xl pb-3">Сайт <span class="block sm:inline">в разработке...</span></h1>
+      <p class=" pb-20">Наш сайт находится <span class="block sm:inline">на стадии разработки.</span></p>
 
-      <p class=" pb-3">Подпишитесь на обновления</p>
-      <a href="https://vk.com/verticalmediaru" target="_blank" class="flex gap-6 items-center pb-20">
-        <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <p class=" pb-3 text-center text-xl sm:text-body sm:text-left">Подпишитесь на обновления</p>
+      <a href="https://vk.com/verticalmediaru" target="_blank" class="flex gap-3 items-center pb-20 justify-center sm:justify-start">
+        <svg width="49" height="49" class=" w-7 h-7 sm:w-12 sm:h-12" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M45.5564 3.44359C42.1082 0.0045166 36.564 0.0045166 25.48 0.0045166H23.52C12.436 0.0045166 6.89174 0.0045166 3.44359 3.44359C0.0045166 6.89174 0.0045166 12.436 0.0045166 23.52V25.48C0.0045166 36.564 0.0045166 42.1082 3.44359 45.5564C6.89174 48.9954 12.436 48.9954 23.52 48.9954H25.48C36.564 48.9954 42.1082 48.9954 45.5564 45.5564C48.9954 42.1082 48.9954 36.564 48.9954 25.48V23.52C48.9954 12.436 48.9954 6.89174 45.5564 3.44359ZM35.1575 35.2981C33.9143 31.419 30.811 28.42 26.705 28.0116V35.2981H26.0743C14.9087 35.2981 8.53868 27.6441 8.271 14.9041H13.8652C14.0466 24.255 18.1708 28.2158 21.4375 29.0325V14.9041H26.705V22.9665C29.9308 22.6216 33.32 18.9466 34.4633 14.9041H39.7308C38.8552 19.8858 35.1802 23.5608 32.5668 25.0716C35.1802 26.2966 39.3633 29.4998 40.9558 35.2981H35.1575Z" fill="white"/>
         </svg>
         <span>vk.com/verticalmediaru</span>
       </a>
-      <p class="text-description pb-5">
-        Оставьте заявку на разработку сайта прямо сейчас. <br>
+      <p class=" text-lg sm:text-description pb-5 text-center sm:text-left">
+        Оставьте заявку <span class="block sm:inline">на разработку сайта</span><span class="hidden sm:inline"> прямо сейчас. <br>
         Заполните форму, и мы свяжемся с Вами, <br>
-        чтоб обсудить детали проекта. <br>
+        чтоб обсудить детали проекта. <br></span>
       </p>
-      <button class="bg-clip-text text-transparent bg-gradient-to-r from-primary-link--1 to-primary-link--2 p-3 border border-grad">
+      <button class="bg-clip-text text-transparent bg-gradient-to-r from-primary-link--1 to-primary-link--2 p-3 border border-grad text-sm sm:text-body mx-1 self-center w-64 ms:w-auto ">
         Оставить заявку 
       </button>
     </main>
-    <footer class="max-w-screen-xl text-center self-center py-6">
+    <footer class="max-w-screen-xl text-center self-center py-6 row-start-5 row-end-6">
       <p class=" text-footer">
         VERTICAL MEDIA <br>
         прод. Colored | Art&Creative Area <br>
